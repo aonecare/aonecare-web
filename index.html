@@ -7,7 +7,20 @@
 <title>A One Care | Education Platform</title>
 
 <style>
+.dark{
+background:#121212;
+color:white;
+}
 
+.dark .card{
+background:#1f1f1f;
+color:white;
+}
+
+.dark header,
+.dark footer{
+background:#000;
+}
 *{
 margin:0;
 padding:0;
@@ -34,7 +47,7 @@ header h2{
 color:white;
 }
 
-nav a{
+nav a{<button onclick="toggleTheme()" class="btn">🌙</button>
 color:white;
 text-decoration:none;
 margin-left:20px;
@@ -441,6 +454,11 @@ href="https://wa.me/8801731003063">
 WhatsApp
 
 </a>
-
+HTML
+<script>
+function toggleTheme(){
+document.body.classList.toggle("dark");
+}
+</script>
 </body>
 </html>
